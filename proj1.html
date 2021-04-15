@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--
+  https://www.w3schools.com/howto/tryit.asp?filename=tryhow_make_a_website_footer
+-->
+<html lang="en">
+<head>
+     <script src="timeScript.js"></script>
+     <script src="DropdownClick.js"></script>
+     <script src="cntctbtn.js"></script>
+  <title>Page Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>   </style>
+    <link rel="stylesheet" type="text/css" href="styles1.css">
+</head>
+<body onload="startTime()">
+  <div class="header">
+    <h3 id="txt" class="left"></h3>    
+    <h1>My website</h1>
+    <p>A website created by me.</p>
+      
+  </div>
+
+  <div class="navbar">
+    <a href="#">Link</a>
+    <div class="dropdown">
+    <button onclick="myFunction()"  class="dropbtn">Dropdown</button>
+
+    <div id="myDropdown" class="dropdown-content">
+      <a target="_blank">Link 1</a>
+      <a href="#">Link 3</a>
+      <button onclick="ContactBtn()" class="cntctbtn">Contact us</button>
+    </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div id="side" class="side">
+      <h2>Contact us:</h2>
+      <form>
+        <label for="fname">First Name:</label><br>
+        <input class="input" name="firstname" id="fname" placeholder="Your first name..."><br>
+
+        <label for="lname">Last Name:</label><br>
+        <input class="input" name="lastname" id="lname" placeholder="Your last name..."><br>
+
+        <label for="theme">Subject of report:</label><br>
+        <select class="input" id="theme" name="theme"><br>
+          <option value="default" color="gray">(choose subject)</option>
+          <option value="tech">Technical problem</option>
+          <option value="req">Request</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="write">Tell us:</label><br>
+        <textarea class="input" id="write" name="write" placeholder="Write here..." maxlength="32678"></textarea><br>
+        <input type="submit" value="Submit">
+      </form>
+      </div>
+    <div class="main">
+      <section>
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>....</p>
+      </section>
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>...</p>
+    </div>
+  </div>
+
+  <div class="footer">
+  <h5>Николай Салутски, СТД задочно - I-ви курс</h5>
+      
+  </div>
+    
+</body>
+</html>
